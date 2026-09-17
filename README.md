@@ -6,7 +6,7 @@
 
 | | |
 | --- | --- |
-| **Live Demo** | [LIVE_DEMO_URL](LIVE_DEMO_URL) |
+| **Live Demo** | [LIVE_DEMO_URL](https://ai-competitive-intelligence.onrender.com) |
 | **GitHub** | [CRISZJB/ai-competitive-intelligence](https://github.com/CRISZJB/ai-competitive-intelligence) |
 | **项目状态** | MVP Sealed |
 | **项目类型** | AI Product / Portfolio Project |
