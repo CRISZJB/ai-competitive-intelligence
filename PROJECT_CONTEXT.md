@@ -272,18 +272,27 @@ Verified: `npm run lint` · `npm run build` · `npm run test:consistency`.
 
 Verified: `npm run lint` · `npm run build` · `npm run test:consistency`.
 
+## Round 5 (2026-09-17) — Portfolio README & screenshot assets — done
+
+1. 重写根目录 `README.md`（中文作品集叙事；去掉过时的 Load Demo Scenario 等文案）  
+2. 创建 `docs/images/`（截图目录；含 `.gitkeep`；不造假图）  
+3. README 引用：`research-brief` / `workflow-progress` / `overview` / `evidence-drawer` / `recommendations`  
+4. Live Demo 使用 placeholder：`LIVE_DEMO_URL`  
+5. **未改**任何 `src/` 业务代码  
+
 ---
 
 # Next Task
 
-**MVP 已 sealed（含 zh-CN 本地化 + 文案一致性清洁）。** 停止核心功能开发。
+**MVP 已 sealed；产品代码停止功能开发。**
 
-可选：
+作品集收尾可选：
 
-1. Live Research 实跑确认报告正文中英文混用已收敛  
-2. 若 Demo 数据集英文叙事影响演示体验，可单独翻译 demo 文案（不改 schema）  
+1. 将真实截图放入 `docs/images/`（见 README 截图资产表）  
+2. 部署完成后把 README 中的 `LIVE_DEMO_URL` 换成真实 URL  
+3. 视需要同步更新 `.env.example` 文案（与 DeepSeek / Tavily 一致）  
 
-Do **not** redesign architecture or add a full i18n framework by default.
+Do **not** redesign architecture or add features by default.
 
 ---
 
@@ -382,7 +391,8 @@ Verified paths in this repository:
 | Demo research catalog | `src/data/competitive-analysis/demo-catalog.ts` |
 | Consistency regression tests | `src/lib/competitive-analysis/consistency.regression.ts` |
 | Env template | `.env.example` |
-| README | `README.md` |
+| README（作品集） | `README.md` |
+| Portfolio screenshots | `docs/images/` |
 
 ---
 
@@ -394,6 +404,6 @@ Verified paths in this repository:
 2. **再阅读当前 repository**（优先 Important Files）  
 3. 先理解现有架构与已完成能力  
 4. **不要重新设计项目，不要从零开始，不要默认加功能 / 完整 i18n**  
-5. MVP 已封版（含简体中文默认输出）— 仅在 Live run 确认新缺陷时做最小修复  
+5. MVP 已封版 — 产品代码仅在确认缺陷时最小修复；作品集侧补截图与 Live Demo URL  
 
-当前阶段：**MVP sealed + zh-CN default + 文案一致性清洁**。
+当前阶段：**MVP sealed + zh-CN + Portfolio README ready**（等待 `docs/images/` 截图与 `LIVE_DEMO_URL`）。
